@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  /* --primaryBackground: #000000; */
+  --primaryBackground: #050609;
+  --secondaryBackground: rgba(25, 25, 25, 0.85);
+  --titleColor: #ffffff;
+  --textColor: #bbbbbb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: unset;
+}
+
+b {
+  color: #dddddd !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(0.75vh + 9px);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--textColor);
+  background-color: var(--primaryBackground);
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1,
+h2 {
+  font-family: "Open Sans", sans-serif;
+  color: var(--titleColor);
+}
+
+header {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  opacity: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hexagon {
+  width: 18em;
+  height: 21em;
+  background-image: url("../img/avatar.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+header .info {
+  margin-top: 1em;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+footer {
+  padding: 0.25em;
+  width: auto;
+  background-color: var(--secondaryBackground);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: #fff;
+  color: var(--primaryBackground);
+  cursor: pointer;
+  padding: 0.5em 1.5em;
+  margin-top: 2em;
+}
+
+.button:hover {
+  background-color: var(--textColor);
+}
+.button:focus {
+  outline: 1px dotted rgb(187, 187, 187);
+  outline-offset: 1px;
+}
+
+.content {
+  margin-top: 100vh;
+}
+.content section {
+  background-color: var(--secondaryBackground);
+  padding: 2em;
+  margin: 1.5em 0em;
+  line-height: 1.5em;
+}
+
+.content section h2 {
+  margin-bottom: 1em;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  background-color: var(--primaryBackground);
+  border-radius: 1em;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  margin: 0.25em;
+  flex: 1 0 calc(25% - 1em);
+}
+
+#education li,
+#games li {
+  margin-top: 1em;
+}
+
+#projects li {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+#projects .github-link {
+  text-align: center;
+  margin-top: 2em;
+  width: 100%;
+}
+
+.github-link .fa-external-link {
+  margin-left: 0.25em;
+}
+
+.project-img {
+  width: 100%;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.project-info b {
+  font-size: 1.15em;
+}
+
+.project-info p {
+  color: var(--textColor);
+  margin-top: 0.5em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+  width: 50%;
+}
+
+.social-links li {
+  margin: 0.5em;
+  transition: 0.25s;
+}
+
+.social-links li:hover {
+  transform: scale(1.15);
+  color: #fff;
+}
+
+.social-links .fa {
+  font-size: 1.5em;
+}
+
+#contact li {
+  margin-top: 0.75em;
+}
+
+#contact .fa {
+  margin-right: 0.5em;
+}
+
+@media only screen and (max-height: 600px) {
+  .hexagon {
+    width: 12em;
+    height: 15em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-size: cover;
+  }
+
+  .hexagon {
+    width: 22em;
+    height: 25em;
+  }
+
+  footer {
+    margin: 0em 2em;
+  }
+
+  .content {
+    padding: 1em;
+    display: flex;
+  }
+
+  .left {
+    min-width: 65%;
+  }
+
+  .left,
+  .right {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+
+  .content section {
+    flex-grow: 1;
+    margin: 1em;
+  }
+
+  #education {
+    order: -2;
+  }
+  #skills {
+    order: -1;
+  }
+
+  #projects li {
+    flex-direction: row;
+  }
+
+  .project-img {
+    width: 12em;
+    height: auto;
+  }
+
+  #projects .github-link {
+    margin-top: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: calc(0.75vh + 11px);
+  }
+}
+@media only screen and (min-width: 2400px) {
+  html {
+    font-size: calc(0.75vh + 15px);
+  }
+}

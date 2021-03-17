@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adrián Rivarola</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hexagon"></div>
+
+      <div class="info">
+        <h1>Adrián Rivarola</h1>
+        <p>Software Developer</p>
+      </div>
+      <a class="button" href="#about" id="asd"> about me </a>
+    </header>
+
+    <div class="content" id="contenido">
+      <div class="left">
+        <section id="about">
+          <h2>About</h2>
+          <p>
+            I’m a web & software developer from Hohenau, Paraguay. <br />
+            <br />
+            I like to:
+          </p>
+          <ul>
+            <li>- make interactive web apps.</li>
+            <li>- solve coding problems on Codewars.</li>
+            <li>- participate in game jams every now and then.</li>
+          </ul>
+          <br />
+          <p>
+            I’m always trying to improve my problem solving skills, along with
+            my understanding of algorithms and data structures.
+          </p>
+        </section>
+
+        <section id="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              <img src="./img/project3.jpg" class="project-img" />
+              <div class="project-info">
+                <b>TicketManager</b>
+                <p>
+                  An online platform to distribute tickets for an event. Each
+                  ticket consist of a unique token wich can be scanned and
+                  validated by the organizer of the event.
+                </p>
+                <p>
+                  The client app uses ReactJs +
+                  <a
+                    href="https://react.semantic-ui.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Semantic UI
+                  </a>
+                  +
+                  <a
+                    href="https://www.apollographql.com/docs/react/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    apollo-client
+                  </a>
+                  , and speaks to a GraphQL server, which handles user
+                  authentication as well as other operations, storing the data
+                  in a MongoDB database.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./img/project1.png" class="project-img" />
+              <div class="project-info">
+                <b>Drinks & Waffles</b>
+                <p>
+                  A progressive web application to register orders from a family
+                  restaurant, built with
+                  <a
+                    href="https://bootstrap-vue.org/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    BootstrapVue
+                  </a>
+                  + Axios , connected to a REST API, which was developed in
+                  TypeScript, using Express and
+                  <a
+                    href="https://mongoosejs.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Mongoose.
+                  </a>
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./img/project2.png" class="project-img" />
+              <div class="project-info">
+                <b>Maka'i</b>
+                <p>
+                  A multiplayer browser game based on a traditional card game
+                  from Paraguay. The server was built with TypeScript and
+                  Socket.io, while the client uses Vue.js and Bootstrap 5.
+                </p>
+                <p>
+                  <a
+                    href="https://maka-i.herokuapp.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Live demo
+                  </a>
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="github-link">
+            <a
+              href="https://github.com/adrian2358?tab=repositories"
+              rel="noreferrer"
+              target="_blank"
+              class="button"
+            >
+              More on github<i class="fa fa-external-link"></i>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="right">
+        <section id="games">
+          <h2>Games</h2>
+          <ul>
+            <li>
+              <p>
+                <a
+                  href="https://globalgamejam.org/2021/games/bionicbuddhistdungeon-8"
+                  title="GGJ site"
+                  target="_blank"
+                >
+                  <b> Bionic Buddhist Dungeon </b>
+                </a>
+                <br />
+                Global Game Jam 2021
+              </p>
+            </li>
+            <li>
+              <p>
+                <a
+                  href="https://js13kgames.com/entries/go-go-programming-dystopia"
+                  title="GGJ site"
+                  target="_blank"
+                >
+                  <b> Go Go Programming Dystopia </b>
+                </a>
+                <br />
+                js13kGames 2020
+              </p>
+            </li>
+            <li>
+              <p>
+                <a
+                  href="https://globalgamejam.org/2020/games/bizz-planet-8"
+                  title="GGJ site"
+                  target="_blank"
+                >
+                  <b> BizzPlanet </b>
+                </a>
+                <br />Global Game Jam 2020
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="skills">
+          <h2>Skills</h2>
+          <div class="skill-list">
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">HTML/CSS</div>
+            <div class="skill-item">Vue.js</div>
+            <div class="skill-item">React.js</div>
+            <div class="skill-item">MongoDB</div>
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">Git</div>
+          </div>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <p>
+                <b>(B.Sc.) Systems Analysis (2018 - present) </b>
+                <br />
+                Universidad Autónoma de Encarnación <br />
+                Hohenau, Paraguay
+              </p>
+            </li>
+            <li>
+              <p>
+                <b> (B.Sc.) Computer Engineering (2017) </b>
+                <br />
+                Universidad Católica - Campus Itapúa
+                <br />
+                Encarnación, Paraguay
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              <a href="mailto:adr2358@gmail.com">
+                <i class="fa fa-envelope"></i>adr2358@gmail.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://t.me/AdrianRivarola"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <i class="fa fa-paper-plane"></i>t.me/AdrianRivarola
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <ul class="social-links">
+        <li>
+          <a
+            href="https://github.com/adrian2358"
+            title="Github profile"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://stackoverflow.com/users/story/11820233"
+            title="StackOverflow profile"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <i class="fa fa-stack-overflow"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/adrián-rivarola/"
+            title="LinkedIn profile"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
